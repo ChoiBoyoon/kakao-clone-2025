@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="my first web page", name="description">
     <title>Home - my first web page</title>
-    <link href="styles.css" rel="stylesheet" />
-    <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="https://imgs.search.brave.com/ZEZXVtWaTERSzf2Wz5BTetEsDKf6YCZB74XFGH_xfQo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ob3Rl/bW9qaS5jb20vaW1h/Z2VzL2Vtb2ppL2Qv/MXhiZGlnaXJ5Ymdn/ZC5wbmc"/>
+    <style>
+        body {
+            height: 1000vh;
+            margin:50px;
+        }
+        span{
+            color: tomato;
+            background-color: yellowgreen;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        p span {
+            color: white;
+        }
+        span+p {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello world!! This is my first HTML file!</h1>
-    <h2>This one is between h2 tags!</h2>
-    <h3>This one is between h3 tags!</h3>
-    and this is some random text
-    <ol>
-        <li>kimchi</li>
-        <li>bibimbap</li>
-        <li>bolgogi</li>
-    </ol>
-    <div id="google">
-        <a href="https://www.google.com" target="_blank">Click here to go to Google</a>
+    <div>
+        <span>70</span>
+        <p>
+            소리에 놀라지 않는 사자와 같이<br>
+            그물에 걸리지 않는 바람과 같이<br>
+            흙탕물에 더럽혀지지 않는 연꽃과 같이<br>
+            무쇠의 뿔처럼 혼자서 가라<br>
+            <span>숫타니파타</span>
+        </p>
     </div>
-    <img src="https://media.timeout.com/images/106181719/750/562/image.jpg" />
-    <footer>
-        &copy; 2025 C.B.Y.
-    </footer>
 </body>
 </html>
