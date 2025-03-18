@@ -6,25 +6,92 @@
     <meta content="my first web page", name="description">
     <title>Home - my first web page</title>
     <style>
-        body {
-            height: 1000vh;
-            margin:50px;
+        :root{
+            --kakao-color: #fcce00;
         }
-        p::first-letter{
-            background-color:yellowgreen;
-            color:white;
-            font-size:100px;
+        body{
+            height: 100vh;
+            width:100vw;
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            background-color:teal;
+            width:200px;
+            height:200px;
+        }
+        span{
+            font-size:20px;
+        }
+        @media screen and (orientation:landscape){
+            div{
+                background-color: wheat;
+            }
+            span{
+                display:none;
+            }
+        }
+        @media print {
+            div{
+                border: 1px solid black;
+                background-color: white;
+            }
+        }
+        @-webkit-keyframes focus-in-contract-bck {
+        0% {
+            letter-spacing: 1em;
+            -webkit-transform: translateZ(300px);
+                    transform: translateZ(300px);
+            -webkit-filter: blur(12px);
+                    filter: blur(12px);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateZ(12px);
+                    transform: translateZ(12px);
+            -webkit-filter: blur(0);
+                    filter: blur(0);
+            opacity: 1;
+        }
+        }
+        @keyframes focus-in-contract-bck {
+        0% {
+            letter-spacing: 1em;
+            -webkit-transform: translateZ(300px);
+                    transform: translateZ(300px);
+            -webkit-filter: blur(12px);
+                    filter: blur(12px);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateZ(12px);
+                    transform: translateZ(12px);
+            -webkit-filter: blur(0);
+                    filter: blur(0);
+            opacity: 1;
+        }
         }
 
+        .focus-in-contract-bck {
+	        -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
     </style>
 </head>
 <body>
-    <p>
+    <!-- <p>
         소리에 놀라지 않는 사자와 같이<br>
         그물에 걸리지 않는 바람과 같이<br>
         흙탕물에 더럽혀지지 않는 연꽃과 같이<br>
         무소의 뿔처럼 혼자서 가라<br>
         숫타니파타
     </p>
+    <a href="https://matthewlein.com/tools/ceaser">To see how ease-in functions work,</a> -->
+    <!-- <a href="https://animista.net/" class="focus-in-contract-bck">To see more CSS animations,</a>
+    <image src="/Users/boyoon/Documents/GitHub/images/boyoon_linkedin.jpg " width="300px"/> -->
+    <div></div>
+    <span>Please flip your phone ;(</span>
 </body>
 </html>
