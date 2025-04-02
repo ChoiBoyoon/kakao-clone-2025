@@ -1,6 +1,7 @@
 .find-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 20px 5px;
 }
 
 .find-icons__icon {
@@ -17,6 +18,130 @@
     margin-top: 15px;
 }
 
+
+.find-icons__icon i {
+    color: var(--dark-grey-color);
+}
+
+.find-icons__icon span {
+    text-align: center;
+}
+
+
 .recommended-friends {
     border-top: var(--section-border);
+    padding-top: 15px;
+    margin: 25px 0px;
+}
+
+.recommended-friends__title {
+    color: var(--grey-color);
+    font-size: 14px;
+}
+
+.recommended-friends span {
+    margin: 100px;
+    display: block;
+    text-align: center;
+    color: var(--light-grey-color);
+}
+
+.open-chat {
+    border-top: var(--section-border);
+    padding: 15px 0px;
+}
+
+.open-chat__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.open-chat__header h4 {
+    color: var(--grey-color);
+}
+
+.open-chat__header span {
+    color: var(--light-grey-color);
+}
+
+.open-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-post__title {
+    font-weight: 600;
+    margin-bottom:7px;
+}
+
+.open-post__hashtags {
+    text-transform: uppercase;
+    color: var(--dark-grey-color);
+}
+
+.open-post__members {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.open-post__members img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.open-post__member-count {
+    color: var(--grey-color);
+    font-size: 16px;
+}
+
+.open-post__members .divider {
+    width: 1px;
+    height: 15px;
+    background-color: var(--grey-color);
+    margin: 0px 5px;
+}
+
+.open-post__member-status {
+    color: var(--pink-color);
+}
+
+.open-post__photo {
+    position: relative;
+}
+
+.open-post__photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20%;
+}
+
+.open-post__heart-count {
+    background-color: var(--grey-color);
+    color: white;
+    padding: 7px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    font-size: 12px;
+}
+
+.open-post__heart-count span {
+    margin-left: 3px;
+}
+
+.open-post:first-of-type ~ .open-post {
+    margin-top: 10px;
+    border-top: var(--section-light-border);
+    padding: 10px 0px;
 }

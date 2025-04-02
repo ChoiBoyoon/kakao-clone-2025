@@ -32,3 +32,15 @@ body {
     left: 25px;
     bottom: 23px;
 }
+
+.highlight {
+    font-weight: 700;
+    color: tomato;
+}
+
+.red-circle {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border-color: tomato;
+}
