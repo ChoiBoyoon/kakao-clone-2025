@@ -5,6 +5,7 @@
     padding: var(--horizontal-space);
     padding-top: 40px;
     opacity: 90%;
+    margin-bottom: 15px;
 }
 
 .screen-header__title {
@@ -13,5 +14,15 @@
 }
 
 .screen-header__icons span{
-    margin-left: 32px;
+    margin-left: 3vw;
+}
+
+.screen-header__icons{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.screen-header__icons span:last-child {
+    position: relative;
 }
