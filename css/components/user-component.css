@@ -1,6 +1,13 @@
 .user-component {
     justify-content: space-between;
 }
+
+.user-component a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
  
 
 .user-component,
@@ -9,7 +16,7 @@
     align-items: center;
 }
 
-.user-component:first-of-type ~ .user-component{
+.user-component:not(:first-of-type) {
     border-top: var(--section-border);
     margin: 10px 0px;
     padding: 10px 0px;
