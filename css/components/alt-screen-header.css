@@ -9,12 +9,22 @@
     padding-top: 43px;
 }
 
+.alt-header__column {
+    width: 33%;
+}
+
 .alt-header__column:first-child {
     margin-right: auto;
 }
 
+.alt-header__column:nth-child(2) {
+    text-align: center;
+}
+
 .alt-header__column:last-child {
     margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -26,4 +36,8 @@
 /* 오른쪽 폰트 그룹에 적용됨 */
 .alt-header__column:nth-of-type(3) i {
     font-size: 25px;
+}
+
+.alt-header__column span:last-child{
+    margin-left: 20px;
 }
