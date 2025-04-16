@@ -22,6 +22,10 @@
     padding: 10px 0px;
 }
 
+.user-component.no-section-border {
+    border-top: none;
+}
+
 .user-component__avatar {
     width: 70px;
     height: 70px;
