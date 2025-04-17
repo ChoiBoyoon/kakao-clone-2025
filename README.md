@@ -1,4 +1,9 @@
 # Kokoa Clone 2025
 
-CSS got so much better
-HTML & CSS are so much fun
+This project is a static website built with HTML and CSS.
+Optimized for smartphone screens; layout issues may occur on larger screens.
+
+
+
+
+
